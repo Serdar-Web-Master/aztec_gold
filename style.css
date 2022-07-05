@@ -1,0 +1,103 @@
+
+
+.wrapper {
+   margin: 0;
+   
+}
+.display {
+   margin: 0 auto;
+   height: 97vh;
+   width: 175vh;
+ background: url("display.jpg") center/cover no-repeat;
+ position: relative;
+ display: flex;
+ /* opacity: .1; */
+}
+
+.ramka {
+   box-sizing: border-box;
+   border: 2px solid #dcab57;
+   border-bottom: 5px solid #dcab57;
+   background-color: #d5e2de85;
+   position: absolute;
+   left: 14vh;
+   top: 17vh;
+   height: 67vh;
+   width: 28vh;
+   overflow: hidden;
+  
+}
+.ramka2 {
+   left: 43.5vh;
+   top: 16.5vh;
+}
+.column {
+   /* border: 2px solid #dcab57; */
+   background-color: aliceblue;
+   position: absolute;
+   width: 26vh;
+   height: 1000px;
+   left: 1vh;
+   top: 1vh;
+  
+}
+
+.column img {
+   height: 22vh;
+   margin-bottom: -1vh;
+}
+
+.finish-img {
+   box-sizing: border-box;
+   
+   
+   position: absolute;
+   left: 14vh;
+   top: 17vh;
+   height: 67vh;
+   width: 147vh;
+}
+
+.line {
+   /* background-color: #13c58f85; */
+   position: absolute;
+   left: 0vh;
+   top: 0vh;
+   height: 67vh;
+   width: 28vh;
+   overflow: hidden;
+}
+.result { 
+   height: 22vh;
+}
+
+.red {
+   height: 23vh;
+   margin-top: 1px;
+}
+
+.anim {
+   animation-name: move;
+   animation-duration: 5s;
+   /* animation-iteration-count: infinite; */
+   animation-fill-mode: forwards;
+   
+}
+
+@keyframes move {
+   100% {
+      margin-top: -8200px;
+   }
+}
+
+.start {
+   position: absolute;
+   bottom: 50px;
+   right: 250px;
+   background-color: red;
+   padding: 20px;
+}
+
+/* .dracon {
+   display: none;
+} */
