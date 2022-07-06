@@ -1,29 +1,12 @@
-import { dracon, head1, head2, orel, bonus, kukuruza, lion, lyagushka, piramida, ptichka, tomato, yajer} from "./vars.js";
+import { block1, block2, block3, block4, block5, block6, block7, block8, block9, block10, block11, block12, block13, block14, block15 } from "./vars.js";
 
-import { random1 ,random2, random3, random4 ,random5, random6, random7 ,random8, random9, random10 ,random11, random12, random13 ,random14, random15 } from "./random.js";
+// import { random1 ,random2, random3, random4 ,random5, random6, random7 ,random8, random9, random10 ,random11, random12, random13 ,random14, random15 } from "./random.js";
 
-console.log(random1 ,random2, random3, random4 ,random5, random6, random7 ,random8, random9, random10 ,random11, random12, random13 ,random14, random15 );
+// console.log(random1 ,random2, random3, random4 ,random5, random6, random7 ,random8, random9, random10 ,random11, random12, random13 ,random14, random15 );
 
 const imgArr = ["dracon.png", "head1.png", "head2.png", "orel.png", "lion.png", "lyagushka.png", "kukuruza.png", "yajer.png", "ptichka.png", "tomato.png", "bonus.png", "piramida.png"]
 
 const imgArr2 = ["dracon.png", "head1.png", "head2.png", "orel.png", "lion.png", "lyagushka.png", "kukuruza.png", "yajer.png", "ptichka.png", "tomato.png", "piramida.png"]
-
-
-const block1 = document.querySelector('.block1');
-const block2 = document.querySelector('.block2');
-const block3 = document.querySelector('.block3');
-const block4 = document.querySelector('.block4');
-const block5 = document.querySelector('.block5');
-const block6 = document.querySelector('.block6');
-const block7 = document.querySelector('.block7');
-const block8 = document.querySelector('.block8');
-const block9 = document.querySelector('.block9');
-const block10 = document.querySelector('.block10');
-const block11 = document.querySelector('.block11');
-const block12 = document.querySelector('.block12');
-const block13 = document.querySelector('.block13');
-const block14 = document.querySelector('.block14');
-const block15 = document.querySelector('.block15');
 
 
 const start = document.querySelector('.start');
@@ -33,7 +16,80 @@ const column3 = document.querySelector('.column3');
 const column4 = document.querySelector('.column4');
 const column5 = document.querySelector('.column5');
 
-function f1() {
+const finish_img = document.querySelector('.finish-img');
+
+const line1 = document.querySelector('.line1');
+const line2 = document.querySelector('.line2');
+const line3 = document.querySelector('.line3');
+const line4 = document.querySelector('.line4');
+const line5 = document.querySelector('.line5');
+
+
+
+start.addEventListener("click",animStart)
+
+function animStart() {
+
+line1.classList.add("opacity");
+line2.classList.add("opacity");
+line3.classList.add("opacity");
+line4.classList.add("opacity");
+line5.classList.add("opacity");
+
+   let random1;
+let random2;
+let random3;
+let random4;
+let random5;
+let random6;
+let random7;
+let random8;
+let random9;
+let random10;
+let random11;
+let random12;
+let random13;
+let random14;
+let random15;
+
+   random1 = Math.round(Math.random() * 9);
+   random2 = Math.round(Math.random() * 9);
+   random3 = Math.round(Math.random() * 9);
+   random4 = Math.round(Math.random() * 10);
+   random5 = Math.round(Math.random() * 10);
+   random6 = Math.round(Math.random() * 10);
+   random7 = Math.round(Math.random() * 11);
+   random8 = Math.round(Math.random() * 11);
+   random9 = Math.round(Math.random() * 11);
+   random10 = Math.round(Math.random() * 11);
+   random11 = Math.round(Math.random() * 11);
+   random12 = Math.round(Math.random() * 11);
+   random13 = Math.round(Math.random() * 10);
+   random14 = Math.round(Math.random() * 10);
+   random15 = Math.round(Math.random() * 10);
+
+   console.log(random1 ,random2, random3, random4 ,random5, random6, random7 ,random8, random9, random10 ,random11, random12, random13 ,random14, random15 );
+
+   column.classList.add("anim")
+   column2.classList.add("anim")
+   column3.classList.add("anim")
+   column4.classList.add("anim")
+   column5.classList.add("anim")
+
+   // setTimeout(opacity,2000)
+
+
+
+   setTimeout(f1,2000)
+   setTimeout(f2,2500)
+   setTimeout(f3,3000)
+   setTimeout(f4,3500)
+   setTimeout(f5,4000)
+
+
+
+   function f1() {
+      line1.classList.remove("opacity");
    block1.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random1]} class="red" alt="">`);
    block2.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random2]} class="red">`);
    block3.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random3]} class="red">`);
@@ -41,42 +97,45 @@ function f1() {
 }
 
 function f2 (){
+   line2.classList.remove("opacity");
    block4.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random4]} class="red" alt="">`);
    block5.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random5]} class="red">`);
    block6.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random6]} class="red">`);
 }
 
 function f3 (){
+   line3.classList.remove("opacity");
    block7.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random7]} class="red" alt="">`);
    block8.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random8]} class="red">`);
    block9.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random9]} class="red">`);
 }
 
 function f4 (){
+   line4.classList.remove("opacity");
    block10.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random10]} class="red" alt="">`);
    block11.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random11]} class="red">`);
    block12.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random12]} class="red">`);
 }
 
 function f5 (){
+   line5.classList.remove("opacity");
    block13.insertAdjacentHTML("afterbegin",`<img src=${imgArr2[random13]} class="red" alt="">`);
    block14.insertAdjacentHTML("afterbegin",`<img src=${imgArr2[random14]} class="red">`);
    block15.insertAdjacentHTML("afterbegin",`<img src=${imgArr2[random15]} class="red">`);
 }
-
-start.addEventListener("click",animStart)
-
-function animStart() {
-   column.classList.add("anim")
-   column2.classList.add("anim")
-   column3.classList.add("anim")
-   column4.classList.add("anim")
-   column5.classList.add("anim")
-   setTimeout(f1,2000)
-   setTimeout(f2,2500)
-   setTimeout(f3,3000)
-   setTimeout(f4,3500)
-   setTimeout(f5,4000)
-   
+setTimeout(()=>{
+   column.classList.remove("anim")
+   column2.classList.remove("anim")
+   column3.classList.remove("anim")
+   column4.classList.remove("anim")
+   column5.classList.remove("anim")
+} ,5000 )
 }
+
+const reload = document.querySelector('.reload');
+reload.addEventListener("click",()=>{
+   console.log("reload");
+   
+})
+
 

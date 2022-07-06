@@ -115,7 +115,7 @@
    animation-name: move;
    animation-duration: 7s;
    /* animation-iteration-count: infinite; */
-   animation-fill-mode: forwards;
+   /* animation-fill-mode: forwards; */
    
 }
 
@@ -133,4 +133,13 @@
     background-color: red;
     padding: 3px;
 }
+.reload {
+   margin: 29px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
+.opacity {
+   opacity: 0;
+}
