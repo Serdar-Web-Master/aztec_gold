@@ -2,8 +2,6 @@ import { block1, block2, block3, block4, block5, block6, block7, block8, block9,
 
 // import { random1 ,random2, random3, random4 ,random5, random6, random7 ,random8, random9, random10 ,random11, random12, random13 ,random14, random15 } from "./random.js";
 
-// console.log(random1 ,random2, random3, random4 ,random5, random6, random7 ,random8, random9, random10 ,random11, random12, random13 ,random14, random15 );
-
 const imgArr = ["dracon.png", "head1.png", "head2.png", "orel.png", "lion.png", "lyagushka.png", "kukuruza.png", "yajer.png", "ptichka.png", "tomato.png", "bonus.png", "piramida.png"]
 
 const imgArr2 = ["dracon.png", "head1.png", "head2.png", "orel.png", "lion.png", "lyagushka.png", "kukuruza.png", "yajer.png", "ptichka.png", "tomato.png", "piramida.png"]
@@ -76,24 +74,24 @@ let random15;
    column4.classList.add("anim")
    column5.classList.add("anim")
 
-   // setTimeout(opacity,2000)
-
-
-
    setTimeout(f1,2000)
    setTimeout(f2,2500)
    setTimeout(f3,3000)
    setTimeout(f4,3500)
    setTimeout(f5,4000)
 
-
-
    function f1() {
-      line1.classList.remove("opacity");
+
+      block1.innerHTML = ("")
+      block2.innerHTML = ("")
+      block3.innerHTML = ("")
+
+   line1.classList.remove("opacity");
    block1.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random1]} class="red" alt="">`);
    block2.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random2]} class="red">`);
    block3.insertAdjacentHTML("afterbegin",`<img src=${imgArr[random3]} class="red">`);
  
+   console.log(block1);
 }
 
 function f2 (){
@@ -130,7 +128,18 @@ setTimeout(()=>{
    column4.classList.remove("anim")
    column5.classList.remove("anim")
 } ,5000 )
+
+if (random2 == random5 && random5 == random8 ) {
+   console.log("11111111111");
 }
+
+}
+
+
+
+
+
+
 
 const reload = document.querySelector('.reload');
 reload.addEventListener("click",()=>{
