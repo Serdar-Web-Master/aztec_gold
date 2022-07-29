@@ -1,8 +1,6 @@
 
-
 .wrapper {
-   margin: 0;
-   
+   margin: 0;  
 }
 .display {
    margin: 0 auto;
@@ -43,7 +41,6 @@
    top: 16.5vh;
 }
 .column {
-   /* border: 2px solid #dcab57; */
    background-color: aliceblue;
    position: absolute;
    width: 26vh;
@@ -81,7 +78,6 @@
 }
 
 .line {
-   /* background-color: #13c58f85; */
    position: absolute;
    left: 0vh;
    top: -1vh;
@@ -124,14 +120,14 @@
    }
 }
 
-.start {
+/* .start {
    position: absolute;
    width: 25vh;
     bottom: 1vh;
     right: 13vh;
     background-color: red;
     padding: 3px;
-}
+} */
 .reload {
    margin: 29px;
     position: absolute;
@@ -141,4 +137,51 @@
 
 .opacity {
    opacity: 0;
+}
+
+.control__panel {
+   position: absolute;
+    margin-top: -42px;
+    margin-left: 47px;
+    /* bottom: 0;
+    left: 66; */
+    color: white;
+    line-height: 1;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2vh;
+    width: 80%;
+    background-color: #836e52;
+}
+
+.panel__windows {
+   display: flex;
+    justify-content: space-between;
+    
+}
+
+.df {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.window {
+   background-color: black;
+   color: aliceblue;
+   width: 10vh;
+   font-size: 3vh;
+   border-radius: 4px;
+   margin-left: 2vh;
+}
+
+.panel__buttons {
+   margin-bottom: 3px
+}
+
+.pan-btn {
+   padding: 1vh;
+   border: 1px solid black;
+   padding: 1vh 6vh 1vh 6vh;
 }
